@@ -1,0 +1,5 @@
+.git
+docs
+server/node_x64.exe
+server/node_x86.exe
+server/node_modules
