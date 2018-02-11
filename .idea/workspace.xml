@@ -2,41 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c054edc0-ba84-4443-bfe8-2859b1ff6910" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupAdder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupAdder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupAdderOld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupableLayerSelector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupableLayerSelector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/GroupableLayerSelectorOld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/rest/layer-groups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/GroupableLayerListView.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/GroupableLayerListView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/css/LayerSelector.css" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/css/LayerSelector.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/LayerSelector.html" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/LayerSelector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/LayerSelector.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/LayerSelector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/PopupMenu.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/PopupMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/Setting.html" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/Setting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/Setting.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/Setting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/Widget.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/Widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/logs/appbuilder.log" afterPath="$PROJECT_DIR$/server/logs/appbuilder.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/apps.js" afterPath="$PROJECT_DIR$/server/rest/apps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/apps" afterPath="$PROJECT_DIR$/server/db/apps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config.json" afterPath="$PROJECT_DIR$/server/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/config.json" afterPath="$PROJECT_DIR$/server/apps/2/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/config.json" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dbutils.js" afterPath="$PROJECT_DIR$/server/dbutils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/index.html" afterPath="$PROJECT_DIR$/server/apps/2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/repo.js" afterPath="$PROJECT_DIR$/server/rest/repo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/repoitems" afterPath="$PROJECT_DIR$/server/db/repoitems" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/repos" afterPath="$PROJECT_DIR$/server/db/repos" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/signininfo.js" afterPath="$PROJECT_DIR$/server/rest/signininfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/nls/strings.js" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/nls/strings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/css/style.css" afterPath="$PROJECT_DIR$/server/apps/2/widgets/GroupableLayerList/setting/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/themes.js" afterPath="$PROJECT_DIR$/server/rest/themes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/utils.js" afterPath="$PROJECT_DIR$/server/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/version-manager.js" afterPath="$PROJECT_DIR$/server/rest/version-manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/rest/widgets.js" afterPath="$PROJECT_DIR$/server/rest/widgets.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebAppBuilderForArcGIS.iws" />
@@ -741,17 +706,21 @@
       <workItem from="1517986184538" duration="30509000" />
       <workItem from="1518091245285" duration="12326000" />
       <workItem from="1518357054802" duration="1362000" />
-      <workItem from="1518360112805" duration="2974000" />
+      <workItem from="1518360112805" duration="3000000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1517349402882</created>
       <updated>1517349402883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GroupableLayerList">
+      <created>1518363117269</created>
+      <updated>1518363117269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230036000" />
+    <option name="totallyTimeSpent" value="230062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -761,6 +730,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -782,7 +752,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -835,7 +804,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="GroupableLayerList" />
+    <option name="LAST_COMMIT_MESSAGE" value="GroupableLayerList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,6 +1123,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
