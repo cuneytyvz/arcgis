@@ -137,7 +137,6 @@ define([
                 this.groupAdder = new GroupAdder({
                     operLayerInfos: layerInfosObj,
                     groupInfo: this.groupInfo,
-                    appId: 2,
                     config: this.config,
                     nls: this.nls,
                     setting: this

@@ -44,7 +44,6 @@ define([
         templateString: template,
         baseClass: 'group-adder',
         setting: null,
-        appId: null,
         _currentSelectedLayerRowNode: null,
         _displayStateStorage: null,
         nls: null,
@@ -203,10 +202,9 @@ define([
 
         _onSaveClicked: function () {
             var context = this;
-            this.groupInfo.appId = this.appId;
 
             var data = {};
-            data.appId = this.appId;
+            data.appId = parseInt(this.groupInfo.appId);
             data.groups = [];
 
             for (var i = 0; i < this.groupInfo.groups.length; i++) {
@@ -226,8 +224,7 @@ define([
                 data.groups.push(g);
             }
 
-//            request.get("/webappbuilder/rest/layerGroups/" + this.appId + "/removeGroups").then(function (r) {
-            request.post("/webappbuilder/rest/layerGroups/" + this.appId + "/save", {
+            request.post("/webappbuilder/rest/layerGroups/" + data.appId + "/save", {
                 data: {data: dojo.toJson(data)},
                 headers: {
                 }
@@ -246,7 +243,7 @@ define([
 
         _promptSaved: function () {
             domStyle.set(this.promptSaved, {'display': 'block'});
-            fx.fadeOut({node: this.promptSaved.id, duration: 500}).play();
+//            fx.fadeOut({node: this.promptSaved.id, duration: 500}).play();
         },
 
         _createGroupSelector: function () {

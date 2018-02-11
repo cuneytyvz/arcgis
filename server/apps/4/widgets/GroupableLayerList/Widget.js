@@ -44,7 +44,7 @@ define([
             //operLayerInfos: Object{}
             //  operational layer infos
             operLayerInfos: null,
-            groupInfo: {numberOfLevels: 1, appId: this.appId, groups: []},
+            groupInfo: {numberOfLevels: 1, appId: null, groups: []},
 
             startup: function () {
                 this.inherited(arguments);
@@ -58,6 +58,8 @@ define([
                 //    and initialize operLayerInfos;
                 //    show layers list;
                 //    bind events for layerLis;
+
+                this.getAppId();
 
                 if (this.map.itemId) {
                     LayerInfos.getInstance(this.map, this.map.itemInfo)
@@ -82,6 +84,19 @@ define([
             destroy: function () {
                 this._clearLayers();
                 this.inherited(arguments);
+            },
+
+            getAppId: function () {
+                var uri = window.location.href;
+                var query = uri.substring(uri.indexOf("apps/"), uri.length);
+
+                // First slash index is 4 -> query = apps/{appId}/
+                var secondSlashIndex = query.indexOf('/', 5);
+
+                if (secondSlashIndex == -1)
+                    this.groupInfo.appId = parseInt(query.substring(5, query.length - 1));
+                else
+                    this.groupInfo.appId = parseInt(query.substring(5, secondSlashIndex));
             },
 
             _obtainMapLayers: function () {
@@ -145,14 +160,14 @@ define([
 
             fetchGroupData: function () {
                 var context = this;
-                request.get("/webappbuilder/rest/layerGroups/2/find", {
+                request.get("/webappbuilder/rest/layerGroups/" + this.groupInfo.appId + "/find", {
                     handleAs: "json"
                 }).then(function (data) {
                     context.groupInfo = data;
 
                     // Remove 'Other' group if empty
-                    if(context.groupInfo.groups[0].layers.length == 0) {
-                        context.groupInfo.groups.splice(0,1);
+                    if (context.groupInfo.groups[0].layers.length == 0) {
+                        context.groupInfo.groups.splice(0, 1);
                     }
 
                     context.mergeGroupInfo();

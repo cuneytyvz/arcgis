@@ -87,8 +87,8 @@ define([
             this.checkAllCheckboxes(); // unchecked checkboxes workaround
         },
 
-        checkAllCheckboxes : function( ) {
-            array.forEach(this.checkboxes,lang.hitch(this,function(checkbox){
+        checkAllCheckboxes: function () {
+            array.forEach(this.checkboxes, lang.hitch(this, function (checkbox) {
                 checkbox.check();
             }));
         },
@@ -212,8 +212,8 @@ define([
             }, layerTdNode);
 
             // if not a layer // TODO : should change with -> layerInfo.type == group || layerInfo.type == subgroup
-            if(!layerInfo.isRootLayer) {
-                domStyle.set(imageShowLegendDiv,{'background-image':'none'})
+            if (!layerInfo.isRootLayer) {
+                dojo.addClass(imageShowLegendDiv, "unfold");
             }
 
             ckSelectDiv = domConstruct.create('div', {
@@ -597,14 +597,14 @@ define([
 
 //            lang.hitch(this,iterateSublayers(layerInfo, this.checkboxes));
 
-            lang.hitch(this,function iterateSublayers(layerInfo, checkboxes) {
+            lang.hitch(this, function iterateSublayers(layerInfo, checkboxes) {
                 for (var i = 0; i < checkboxes.length; i++) {
                     var checkbox = checkboxes[i];
 
                     if (layerInfo.layers != null && layerInfo.layers.length > 0) {
-                        array.forEach(layerInfo.layers, lang.hitch(this,function (layer) {
+                        array.forEach(layerInfo.layers, lang.hitch(this, function (layer) {
                             if (layer.id == dojo.attr(checkbox.domNode.parentNode.parentNode.parentNode, 'layertrnodeid')) {
-                                if (ckSelect.checked){
+                                if (ckSelect.checked) {
                                     checkbox.check();
                                 }
                                 else {
@@ -622,14 +622,14 @@ define([
                                     if (layer.setTopLayerVisible) layer.setTopLayerVisible(ckSelect.checked);
                                 }
 
-                                lang.hitch(this,iterateSublayers(layer, checkboxes));
+                                lang.hitch(this, iterateSublayers(layer, checkboxes));
                             }
                         }));
                     } else {
                         return;
                     }
                 }
-            })(layerInfo,this.checkboxes);
+            })(layerInfo, this.checkboxes);
 
             evt.stopPropagation();
         },
@@ -688,13 +688,37 @@ define([
         },
 
         _onRowTrClick: function (layerInfo, imageShowLegendDiv, layerTrNode, subNode, evt) {
-            this._changeSelectedLayerRow(layerTrNode);
-            var fold = this._foldSwitch(layerInfo, imageShowLegendDiv, subNode);
-            if (evt.ctrlKey || evt.metaKey) {
-                if (layerInfo.isRootLayer && layerInfo.isRootLayer()) {
-                    this.foldOrUnfoldAllRootLayers(fold);
+            if (!layerInfo.isRootLayer) {
+                var fold = this._foldSwitch(layerInfo, imageShowLegendDiv, subNode);
+
+                if (dojo.hasClass(imageShowLegendDiv, "unfold")) {
+                    dojo.removeClass(imageShowLegendDiv, "unfold");
+                    dojo.addClass(imageShowLegendDiv, "fold");
+                } else if (dojo.hasClass(imageShowLegendDiv, "fold")) {
+                    dojo.removeClass(imageShowLegendDiv, "fold");
+                    dojo.addClass(imageShowLegendDiv, "unfold");
                 } else {
-                    this.foldOrUnfoldSameLevelLayers(layerInfo, fold);
+
+                }
+
+                array.forEach(layerInfo.layers, lang.hitch(this, function (layer) {
+                    var el = dojo.query("tr[layertrnodeid=" + layer.id + "]");
+
+                    if (el.style('display') == 'none') {
+                        el.style('display', '');
+                    } else {
+                        el.style('display', 'none');
+                    }
+                }));
+            } else {
+                this._changeSelectedLayerRow(layerTrNode);
+                var fold = this._foldSwitch(layerInfo, imageShowLegendDiv, subNode);
+                if (evt.ctrlKey || evt.metaKey) {
+                    if (layerInfo.isRootLayer && layerInfo.isRootLayer()) {
+                        this.foldOrUnfoldAllRootLayers(fold);
+                    } else {
+                        this.foldOrUnfoldSameLevelLayers(layerInfo, fold);
+                    }
                 }
             }
         },

@@ -51,7 +51,7 @@ define([
         _displayStateStorage: null,
         checkboxes: [],
         numberOfLevels: 1,
-        groupInfo: {numberOfLevels: 1, appId: this.appId, groups: []},
+        groupInfo: {numberOfLevels: 1, appId: null, groups: []},
 
         setParent: function (parent, childs) {
             array.forEach(childs, function (child) {

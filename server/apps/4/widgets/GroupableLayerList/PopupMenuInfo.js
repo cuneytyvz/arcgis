@@ -174,13 +174,13 @@ define([
       var defRet = new Deferred();
       var dynamicDeniedItems = [];
 
-      if (this.layerListWidget.layerListView.isFirstDisplayedLayerInfo(this._layerInfo)) {
+      if (this.layerListWidget.groupableLayerListView.isFirstDisplayedLayerInfo(this._layerInfo)) {
         dynamicDeniedItems.push({
           'key': 'moveup',
           'denyType': 'disable'
         });
       }
-      if (this.layerListWidget.layerListView.isLastDisplayedLayerInfo(this._layerInfo)) {
+      if (this.layerListWidget.groupableLayerListView.isLastDisplayedLayerInfo(this._layerInfo)) {
         dynamicDeniedItems.push({
           'key': 'movedown',
           'denyType': 'disable'
@@ -344,13 +344,13 @@ define([
 
     _onMoveUpItemClick: function(evt) {
       if (!this._layerInfo.isFirst) {
-        evt.layerListView.moveUpLayer(this._layerInfo);
+        evt.groupableLayerListView.moveUpLayer(this._layerInfo);
       }
     },
 
     _onMoveDownItemClick: function(evt) {
       if (!this._layerInfo.isLast) {
-        evt.layerListView.moveDownLayer(this._layerInfo);
+        evt.groupableLayerListView.moveDownLayer(this._layerInfo);
       }
     },
 
