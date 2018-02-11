@@ -61,26 +61,25 @@
                 </td>
                 <td class="label">${nls.url}</td>
             </tr>
-            <tr>
-                <td>
-                    <div class="control-popupmenu-item" itemKey="url" checked="true"
-                         data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="url">
-                    </div>
-                </td>
-                <td class="label">${nls.groupLayers}</td>
-            </tr>
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<div class="control-popupmenu-item" itemKey="groupLayers" checked="true"-->
+                         <!--data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="groupLayers">-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td class="label">${nls.groupLayers}</td>-->
+            <!--</tr>-->
             </tbody>
         </table>
     </div>
 
-    <!--<div class="group-add-part" data-dojo-attach-point="controlPopupMenuPart">-->
-        <!--<select style="margin-left: 10px;" data-dojo-attach-point="selectArrangement" data-dojo-type="dijit/form/Select">-->
-            <!--<option value="0">${nls.left}</option>-->
-            <!--<option value="1">${nls.right}</option>-->
-        <!--</select>-->
-    <!--</div>-->
+    <div class="group-adder-part" data-dojo-attach-point="groupAdderPart">
+        <div class="title">${nls.groupingLayerTitle}</div>
+        <div class="group-adder-div" data-dojo-attach-point="groupAdderDiv"></div>
+    </div>
+
     <div class="layer-selector-part" data-dojo-attach-point="controlPopupMenuPart">
-        <div class="title">${nls.layerSelectorTitle}</div>
+        <!--<div class="title">${nls.layerSelectorTitle}</div>-->
         <div class="layer-selector-div" data-dojo-attach-point="layerSelectorDiv"></div>
     </div>
 </div>

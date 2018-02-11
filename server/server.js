@@ -42,6 +42,7 @@ var themeRest = require('./rest/themes');
 var widgetRest = require('./rest/widgets');
 var signinInfoRest = require('./rest/signininfo');
 var repoRest = require('./rest/repo');
+var layerGroupsRest = require('./rest/layer-groups.js');
 var net = require('net');
 var http = require('http');
 var https = require('https');
@@ -507,6 +508,11 @@ function mapUrl() {
   app.post('/webappbuilder/rest/apps/:appId/saveas', appRest.saveAs);
   app.post('/webappbuilder/rest/apps/:appId/copywidget', appRest.copyWidgetToApp);
   app.post('/webappbuilder/rest/apps/:appId/copytheme', appRest.copyThemeToApp);
+
+  app.get('/webappbuilder/rest/layerGroups/:appId/find', layerGroupsRest.findGroups);
+  app.post('/webappbuilder/rest/layerGroups/:appId/save', layerGroupsRest.saveGroup);
+  app.get('/webappbuilder/rest/layerGroups/:appId/remove/:groupId', layerGroupsRest.removeGroup);
+  app.get('/webappbuilder/rest/layerGroups/:appId/removeGroups/', layerGroupsRest.removeGroups);
 
   /****************** rest *******************/
   //app.post('/webappbuilder/rest/cropimage', utils.cropImage);

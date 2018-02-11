@@ -8,7 +8,7 @@
     "db": "data",
     "opts": {
       "auto_reconnect": true,
-      "safe": true
+      "safe": false
     }
   },
   "tingo": {
