@@ -36,25 +36,19 @@ define([
     'dijit/_TemplatedMixin',
     'dojo/text!./GroupAdder.html',
     'dojo/dom-class',
-    'dojo/dom-style',
-    "dojo/_base/fx"
-], function (_WidgetBase, declare, request, esriRequest, xhr, json, html, lang, array, domConstruct, on, query, Evented, CheckBox, Select, TextBox, NumberTextBox, ValidationTextBox, _TemplatedMixin, template, domClass, domStyle, fx) {
+    'dojo/dom-style'
+], function (_WidgetBase, declare, request, esriRequest, xhr,json, html, lang, array, domConstruct, on, query, Evented, CheckBox, Select, TextBox, NumberTextBox, ValidationTextBox, _TemplatedMixin, template, domClass, domStyle) {
 
     return declare([_WidgetBase, _TemplatedMixin], {
         templateString: template,
         baseClass: 'group-adder',
         setting: null,
+        appId: null,
         _currentSelectedLayerRowNode: null,
         _displayStateStorage: null,
         nls: null,
         maxGroupId: 0,
-        uiOptions: {},
-        initialGroupInfo: {numberOfLevels: 1, appId: this.appId, groups: [
-            {id: 0, title: 'Other', layers: []}
-        ]},
-        groupInfo: {numberOfLevels: 1, appId: this.appId, groups: [
-            {id: 0, title: 'Other', layers: []}
-        ]},
+        groupInfo: {numberOfLevels: 1, appId: this.appId, groups: []},
         numberOfLevels: 1,
         submostGroup: null,
         addedLayers: [],
@@ -66,29 +60,13 @@ define([
         },
 
         postCreate: function () {
-            this.copyGroupInfoToInitialGroupInfo();
-
             this._createGroupSelector();
-        },
-
-        copyGroupInfoToInitialGroupInfo: function () {
-            array.forEach(this.groupInfo.groups, lang.hitch(this, function (group) {
-                this.initialGroupInfo.groups.push(group);
-            }));
         },
 
         refresh: function () {
             this.groupSelect.innerHTML = '';
-            array.forEach(this.nodes, lang.hitch(this, function (node) {
-                dojo.destroy(node);
-                node = null;
-            }));
-
-            this.nodes = [];
 
             this._createGroupSelector();
-            this.setting.destroyLayerSelector();
-            this.setting.createGroupableLayerSelector(this.groupInfo);
         },
 
         getMaxGroupId: function () {
@@ -102,10 +80,6 @@ define([
         },
 
         _onGroupAddClick: function () {
-            if (this.groupTextInput.value.length == 0) {
-                return;
-            }
-
             var exists = false;
             for (var jj = 0; jj < this.groupInfo.groups.length; jj++) {
                 if (this.groupTextInput.value == this.groupInfo.groups[jj].title)
@@ -121,36 +95,18 @@ define([
                 });
             }
 
-            this.uiOptions.lastSelectedGroup = this.groupInfo.groups[this.groupInfo.groups.length - 1];
-
             this.refresh();
         },
 
         _onGroupRemoveClick: function () {
-            var groupIndex = -1, group;
-
-            // Find group
+            var index = -1;
             for (var i = 0; i < this.groupInfo.groups.length; i++) {
-                if (this.groupInfo.groups[i].id == this.selectGroup.value) {
-                    groupIndex = i;
-                    group = this.groupInfo.groups[i];
-                }
+                if (this.groupInfo.groups[i].id == this.selectGroup.value)
+                    index = i;
             }
 
-            // Find layers below this group and remove them from addedLayers
-            for (var i = 0; i < group.layers.length; i++) {
+            this.groupInfo.groups.splice(index, 1);
 
-                var lIndex = -1;
-                for (var j = 0; j < this.addedLayers.length; j++) {
-                    if (this.addedLayers[j].id == group.layers[i].value) {
-                        lIndex = j;
-                    }
-                }
-
-                this.addedLayers.splice(lIndex, 1);
-            }
-
-            this.groupInfo.groups.splice(groupIndex, 1);
             this.refresh();
         },
 
@@ -163,6 +119,7 @@ define([
         },
 
         _onRemoveLayerFromGroupClicked: function () {
+            var gIndex = -1;
             var lIndex = -1;
 
             for (var i = 0; i < this.selectedGroup.layers.length; i++) {
@@ -173,48 +130,26 @@ define([
 
             this.selectedGroup.layers.splice(lIndex, 1);
 
-            for (var i = 0; i < this.addedLayers.length; i++) {
-                if (this.addedLayers[i].id == this.selectRemoveLayer.value) {
-                    lIndex = i;
-                }
-            }
-
-            this.addedLayers.splice(lIndex, 1);
-
             this.refresh();
         },
 
         _onAddLayerToGroupClicked: function () {
-            // Add to desired group
             if (this.selectedGroup.layers == null) {
                 this.selectedGroup.layers = [];
             }
-            this.selectedGroup.layers.push({id: this.selectedLayer.id, title: this.selectedLayer.title});
-            this.addedLayers.push({id: this.selectedLayer.id, title: this.selectedLayer.title});
-
-            // Remove from the Other group
-            var lIndex = i;
-            for (var i = 0; i < this.groupInfo.groups[0].layers.length; i++) {
-                var layer = this.groupInfo.groups[0].layers[i];
-                if (layer.id == this.selectedLayer.id) {
-                    lIndex = i;
-                }
-            }
-
-            this.groupInfo.groups[0].layers.splice(lIndex, 1);
+            this.selectedGroup.layers.push(this.selectedLayer);
+            this.addedLayers.push(this.selectedLayer);
 
             this.refresh();
         },
 
         _onSaveClicked: function () {
             var context = this;
+            this.groupInfo.appId = this.appId;
 
-            var data = {};
-            data.appId = parseInt(this.groupInfo.appId);
-            data.groups = [];
-
+            var data = {appId: this.appId, groups: []};
             for (var i = 0; i < this.groupInfo.groups.length; i++) {
-                var g = {id: this.groupInfo.groups[i].id, title: this.groupInfo.groups[i].title, layers: []};
+                var g = {title: this.groupInfo.groups[i], layers: []};
 
                 for (var j = 0; j < this.groupInfo.groups[i].layers.length; j++) {
                     var l = this.groupInfo.groups[i].layers[j];
@@ -230,26 +165,39 @@ define([
                 data.groups.push(g);
             }
 
-            request.post("/webappbuilder/rest/layerGroups/" + data.appId + "/save", {
-                data: {data: dojo.toJson(data)},
+            request.post("/webappbuilder/rest/layerGroups/" + this.appId + "/save", {
+                data: dojo.toJson(data),
                 headers: {
                 }
             }).then(function (r) {
                 console.log("The server returned: " + r);
-                context.refresh();
+                context.setting.destroyLayerSelector();
+                context.setting.createGroupableLayerSelector(this.groupInfo);
                 context._promptSaved();
             });
+
+//            var xhr = new XMLHttpRequest();
+//            xhr.open("POST", "/webappbuilder/rest/layerGroups/", true);
+//            xhr.setRequestHeader('Content-Type', 'application/json');
+//            xhr.send(JSON.stringify(
+//                data
+//            ));
+//            xhr.onload = function () {
+//                console.log("HELLO")
+//                console.log(this.responseText);
+//                var data = JSON.parse(this.responseText);
+//                console.log(data);
+//            }
 
         },
 
         _onCancelClicked: function () {
-            this.groupInfo = this.initialGroupInfo;
-            this.refresh();
+
         },
 
         _promptSaved: function () {
-            domStyle.set(this.promptSaved, {'display': 'block'});
-//            fx.fadeOut({node: this.promptSaved.id, duration: 500}).play();
+            $('.prompt-saved').show();
+            $('.prompt-saved').fadeOut();
         },
 
         _createGroupSelector: function () {
@@ -257,8 +205,7 @@ define([
             groupOptions.push({label: 'Select group', value: '-1'});
 
             array.forEach(this.groupInfo.groups, lang.hitch(this, function (group) {
-                if (group.id != 0) // Skip 'Other' group
-                    groupOptions.push({label: group.title, value: group.id, group: group});
+                groupOptions.push({label: group.title, value: group.id});
             }));
 
             this.howManyLevelsNode = domConstruct.create("div", {style: 'margin-bottom:5px;'});
@@ -332,14 +279,10 @@ define([
                 options: groupOptions
             });
 
-            this.groupRemoveNode = domConstruct.create("div", {style: 'margin-top: 5px'});
-            this.groupRemoveNode.appendChild(this.selectGroup.domNode);
+            this.selectGroupNode = domConstruct.create("div", {style: 'margin-top: 5px'});
+            this.selectGroupNode.appendChild(this.selectGroup.domNode);
 
-            // set to last selected group if exists
-            if (this.uiOptions.lastSelectedGroup)
-                this.selectGroup.attr('value', this.uiOptions.lastSelectedGroup.id);
-
-            dojo.place(this.groupRemoveNode, groupAddButton, 'after');
+            dojo.place(this.selectGroupNode, groupAddButton, 'after');
 
             var context = this;
 //            this.selectGroup.domNode.onchange = function () {
@@ -387,7 +330,7 @@ define([
                     innerHTML: "Saved."
                 });
 
-            dojo.place(this.promptSaved, this.cancelButton, 'after');
+            dojo.place(this._promptSaved, this.cancelButton, 'after');
 
             dojo.connect(this.cancelButton, 'onclick', this, this._onCancelClicked);
 
@@ -395,16 +338,14 @@ define([
             saveCancelNode.appendChild(saveButton);
             saveCancelNode.appendChild(this.cancelButton);
 
-            dojo.place(saveCancelNode, this.groupRemoveNode, 'after');
+            dojo.place(saveCancelNode, this.selectGroupNode, 'after');
 
             // ON CHANGE
             this.selectGroup.on('change', lang.hitch(this, function (evt) {
+
                 array.forEach(this.nodes, lang.hitch(this, function (selectSubgroup) {
                     dojo.destroy(selectSubgroup);
-                    node = null;
                 }));
-
-                this.nodes = [];
 
                 this.selectedGroup = null;
 
@@ -416,18 +357,13 @@ define([
                     }
                 }
 
-                this.uiOptions.lastSelectedGroup = this.selectedGroup;
-
-                if (this.selectedGroup != null) {
-                    this._createAddLayerRow();
-                    this.nodes.push(this.layerAddNode);
-                }
-
-                if (this.selectedGroup != null && this.selectedGroup.layers != null && this.selectedGroup.layers.length > 0) {
+                if (this.selectedGroup.layers != null && this.selectedGroup.layers.length > 0) {
                     this._createRemoveLayerRow();
                     this.nodes.push(this.layerRemoveNode);
                 }
 
+                this._createAddLayerRow();
+                this.nodes.push(this.selectLayerNode);
 //                this._createSubgroupSelectBox(evt);
             }));
         },
@@ -464,6 +400,14 @@ define([
             this.layerRemoveNode = domConstruct.create("div", {style: 'margin-top: 5px'});
             this.layerRemoveNode.appendChild(this.selectRemoveLayer.domNode);
 
+            var placeAfter = null;
+            if (this.subgroupRemoveNode)
+                placeAfter = this.subgroupRemoveNode;
+            else
+                placeAfter = this.selectGroupNode;
+
+            dojo.place(this.layerRemoveNode, placeAfter, 'after');
+
             var removeLayerFromGroupButton = domConstruct.create("span",
                 {title: 'Remove Layer from Group',
                     class: 'jimu-btn',
@@ -475,41 +419,34 @@ define([
             dojo.connect(removeLayerFromGroupButton, 'onclick', this, this._onRemoveLayerFromGroupClicked);
 
             dojo.place(removeLayerFromGroupButton, this.selectRemoveLayer.domNode, 'after');
-
-            // Placement of the node
-            var placeAfter = null;
-            if (this.addLayerOptions == null || this.addLayerOptions.length == 0)
-                placeAfter = this.groupRemoveNode;
-            else
-                placeAfter = this.layerAddNode;
-
-            dojo.place(this.layerRemoveNode, placeAfter, 'after');
         },
 
         _createAddLayerRow: function () {
-            this.addLayerOptions = [];
+            var layerOptions = [];
 
             var context = this;
-            array.forEach(this.operLayerInfos._operLayers, lang.hitch(this, function (layerInfo) {
+            array.forEach(this.operLayerInfos._operLayers, lang.hitch(function (layerInfo) {
                 var exists = false;
-                array.forEach(context.addedLayers, lang.hitch(this, function (addedLayer) {
+                array.forEach(context.selectedGroup.layers, lang.hitch(this, function (addedLayer) {
                     if (addedLayer.id == layerInfo.id)
                         exists = true;
                 }));
 
                 if (!exists)
-                    this.addLayerOptions.push({label: layerInfo.title, value: layerInfo.title, layer: layerInfo});
+                    layerOptions.push({label: layerInfo.title, value: layerInfo.title});
             }));
 
             this.selectLayer = new Select({
                 name: "selectLayer",
-                options: this.addLayerOptions
+                options: layerOptions
             });
 
-            if (this.addLayerOptions.length > 0)
-                this.selectedLayer = this.addLayerOptions[0].layer;
-            else
-                return;
+//            var context = this;
+//            array.forEach(this.operLayerInfos._operLayers, lang.hitch(function (layerInfo) {
+//                if (layerInfo.title == context.selectLayer.value) {
+//                    context.selectedLayer = layerInfo;
+//                }
+//            }));
 
             var context = this;
             this.selectLayer.on('change', lang.hitch(function (evt) {
@@ -520,8 +457,18 @@ define([
                 }));
             }));
 
-            this.layerAddNode = domConstruct.create("div", {style: 'margin-top: 5px'});
-            this.layerAddNode.appendChild(this.selectLayer.domNode);
+            this.selectLayerNode = domConstruct.create("div", {style: 'margin-top: 5px'});
+            this.selectLayerNode.appendChild(this.selectLayer.domNode);
+
+            var placeAfter = null;
+            if (this.subgroupRemoveNode)
+                placeAfter = this.subgroupRemoveNode;
+            else if (this.layerRemoveNode)
+                placeAfter = this.layerRemoveNode;
+            else
+                placeAfter = this.selectGroupNode;
+
+            dojo.place(this.selectLayerNode, placeAfter, 'after');
 
             this.addLayerToGroupButton = domConstruct.create("span",
                 {title: 'Add Layer to Group',
@@ -534,9 +481,6 @@ define([
             dojo.connect(this.addLayerToGroupButton, 'onclick', this, this._onAddLayerToGroupClicked);
 
             dojo.place(this.addLayerToGroupButton, this.selectLayer.domNode, 'after');
-
-            // Placement of the node
-            dojo.place(this.layerAddNode, this.groupRemoveNode, 'after');
         }
 
     });

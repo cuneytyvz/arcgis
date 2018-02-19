@@ -2837,3 +2837,233 @@
 [2018-02-11T20:16:29.737] [INFO] app - Response length : 1
 [2018-02-11T20:16:42.320] [INFO] app - Find groups app id : 4
 [2018-02-11T20:16:42.321] [INFO] app - Response length : 1
+[2018-02-11T20:18:45.240] [INFO] app - Find groups app id : 4
+[2018-02-11T20:18:45.242] [INFO] app - Response length : 1
+[2018-02-11T20:26:58.044] [INFO] app - Find groups app id : 2
+[2018-02-11T20:26:58.048] [INFO] app - Response length : 0
+[2018-02-11T20:34:35.866] [ERROR] default - Error: ENOENT: no such file or directory, open '/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/apps/2/env.js'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/server.js:251:25
+    at Layer.handle [as handle_request] (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/server.js:243:5
+    at Layer.handle [as handle_request] (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/server.js:229:5
+    at Layer.handle [as handle_request] (/Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/server/node_modules/express/lib/router/layer.js:95:5)
+[2018-02-11T20:44:16.926] [INFO] app - Find groups app id : 4
+[2018-02-11T20:44:16.929] [INFO] app - Response length : 1
+[2018-02-11T20:44:37.684] [INFO] app - Find groups app id : 4
+[2018-02-11T20:44:37.686] [INFO] app - Response length : 1
+[2018-02-11T20:44:38.607] [INFO] app - { data: '{"appId":4,"groups":[{"id":0,"title":"Other","layers":[{"id":"Scene1_WFL1_3081","title":"test_yayin - Drain (fw)"},{"id":"Scene1_WFL1_3587","title":"test_yayin - Hydrant (fw)"},{"id":"Scene1_WFL1_7960","title":"test_yayin - Hydrant Head (fw)"},{"id":"Scene1_WFL1_1043","title":"test_yayin - Main Line (fw)"},{"id":"Scene1_WFL1_9712","title":"test_yayin - Valve (fw)"},{"id":"Scene1_WFL1_6652","title":"test_yayin - Valve Chamber (fw)"},{"id":"Scene1_WFL1_7116","title":"test_yayin - Drain (pw)"},{"id":"Scene1_WFL1_5719","title":"test_yayin - Main Line (pw)"},{"id":"Scene1_WFL1_5446","title":"test_yayin - Valve (pw)"},{"id":"Scene1_WFL1_2271","title":"test_yayin - Plug (pw)"},{"id":"Scene1_WFL1_7939","title":"test_yayin - Main Line (npw)"},{"id":"Scene1_WFL1_6087","title":"test_yayin - Valve (npw)"},{"id":"Scene1_WFL1_3632","title":"test_yayin - stormwater_networkpipe"},{"id":"Scene1_WFL1_7703","title":"test_yayin - stormwater_mainline"},{"id":"Scene1_WFL1_8955","title":"test_yayin - stormwater_drain"},{"id":"Scene1_WFL1_1282","title":"test_yayin - stormwater_manhole"},{"id":"Scene1_WFL1_8013","title":"test_yayin - sewerwater_mainline"},{"id":"Scene1_WFL1_8859","title":"test_yayin - sewerwater_manhole"},{"id":"Scene1_WFL1_1224","title":"test_yayin - sewerwater_openchannel"},{"id":"Scene1_WFL1_7940","title":"test_yayin - sewerwater_drain"},{"id":"Scene1_WFL1_7819","title":"test_yayin - Roads and Runways"},{"id":"Scene1_WFL1_981","title":"test_yayin - Manhole (mv)"},{"id":"Scene1_WFL1_2812","title":"test_yayin - Network (mv)"},{"id":"Scene1_WFL1_5963","title":"test_yayin - Substation (mv)"},{"id":"Scene1_WFL1_6168","title":"test_yayin - Cable Connection Point (mv)"},{"id":"Scene1_WFL1_5392","title":"test_yayin - Distribution Board (elv)"},{"id":"Scene1_WFL1_6464","title":"test_yayin - Equipment (elv)"},{"id":"Scene1_WFL1_7233","title":"test_yayin - Manhole (elv)"},{"id":"Scene1_WFL1_2004","title":"test_yayin - Network (elv)"},{"id":"Scene1_WFL1_7931","title":"test_yayin - Substation (lv)"},{"id":"Scene1_WFL1_8964","title":"test_yayin - Distribution Board (lv)"},{"id":"Scene1_WFL1_9130","title":"test_yayin - Network (lv)"},{"id":"Scene1_WFL1_1122","title":"test_yayin - Equipment (lv)"},{"id":"Scene1_WFL1_3020","title":"test_yayin - Manhole (lv)"},{"id":"Scene1_WFL1_7950","title":"test_yayin - Pole (lv)"}]}]}' }
+[2018-02-11T20:44:38.608] [INFO] app - { appId: 4,
+  groups: [ { id: 0, title: 'Other', layers: [Array] } ] }
+[2018-02-11T20:44:38.611] [INFO] app - insert [{"appId":4,"groups":[{"id":0,"title":"Other","layers":[{"id":"Scene1_WFL1_3081","title":"test_yayin - Drain (fw)"},{"id":"Scene1_WFL1_3587","title":"test_yayin - Hydrant (fw)"},{"id":"Scene1_WFL1_7960","title":"test_yayin - Hydrant Head (fw)"},{"id":"Scene1_WFL1_1043","title":"test_yayin - Main Line (fw)"},{"id":"Scene1_WFL1_9712","title":"test_yayin - Valve (fw)"},{"id":"Scene1_WFL1_6652","title":"test_yayin - Valve Chamber (fw)"},{"id":"Scene1_WFL1_7116","title":"test_yayin - Drain (pw)"},{"id":"Scene1_WFL1_5719","title":"test_yayin - Main Line (pw)"},{"id":"Scene1_WFL1_5446","title":"test_yayin - Valve (pw)"},{"id":"Scene1_WFL1_2271","title":"test_yayin - Plug (pw)"},{"id":"Scene1_WFL1_7939","title":"test_yayin - Main Line (npw)"},{"id":"Scene1_WFL1_6087","title":"test_yayin - Valve (npw)"},{"id":"Scene1_WFL1_3632","title":"test_yayin - stormwater_networkpipe"},{"id":"Scene1_WFL1_7703","title":"test_yayin - stormwater_mainline"},{"id":"Scene1_WFL1_8955","title":"test_yayin - stormwater_drain"},{"id":"Scene1_WFL1_1282","title":"test_yayin - stormwater_manhole"},{"id":"Scene1_WFL1_8013","title":"test_yayin - sewerwater_mainline"},{"id":"Scene1_WFL1_8859","title":"test_yayin - sewerwater_manhole"},{"id":"Scene1_WFL1_1224","title":"test_yayin - sewerwater_openchannel"},{"id":"Scene1_WFL1_7940","title":"test_yayin - sewerwater_drain"},{"id":"Scene1_WFL1_7819","title":"test_yayin - Roads and Runways"},{"id":"Scene1_WFL1_981","title":"test_yayin - Manhole (mv)"},{"id":"Scene1_WFL1_2812","title":"test_yayin - Network (mv)"},{"id":"Scene1_WFL1_5963","title":"test_yayin - Substation (mv)"},{"id":"Scene1_WFL1_6168","title":"test_yayin - Cable Connection Point (mv)"},{"id":"Scene1_WFL1_5392","title":"test_yayin - Distribution Board (elv)"},{"id":"Scene1_WFL1_6464","title":"test_yayin - Equipment (elv)"},{"id":"Scene1_WFL1_7233","title":"test_yayin - Manhole (elv)"},{"id":"Scene1_WFL1_2004","title":"test_yayin - Network (elv)"},{"id":"Scene1_WFL1_7931","title":"test_yayin - Substation (lv)"},{"id":"Scene1_WFL1_8964","title":"test_yayin - Distribution Board (lv)"},{"id":"Scene1_WFL1_9130","title":"test_yayin - Network (lv)"},{"id":"Scene1_WFL1_1122","title":"test_yayin - Equipment (lv)"},{"id":"Scene1_WFL1_3020","title":"test_yayin - Manhole (lv)"},{"id":"Scene1_WFL1_7950","title":"test_yayin - Pole (lv)"}]}],"_id":5,"id":5}]
+[2018-02-18T19:42:48.476] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets
+[2018-02-18T19:42:49.430] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ar/strings.js
+[2018-02-18T19:42:49.431] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/bs/strings.js
+[2018-02-18T19:42:49.431] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/cs/strings.js
+[2018-02-18T19:42:49.432] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/da/strings.js
+[2018-02-18T19:42:49.432] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/de/strings.js
+[2018-02-18T19:42:49.432] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/el/strings.js
+[2018-02-18T19:42:49.433] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/es/strings.js
+[2018-02-18T19:42:49.433] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/et/strings.js
+[2018-02-18T19:42:49.434] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/fi/strings.js
+[2018-02-18T19:42:49.434] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/fr/strings.js
+[2018-02-18T19:42:49.435] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/he/strings.js
+[2018-02-18T19:42:49.435] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/hi/strings.js
+[2018-02-18T19:42:49.435] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/hr/strings.js
+[2018-02-18T19:42:49.436] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/it/strings.js
+[2018-02-18T19:42:49.436] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/id/strings.js
+[2018-02-18T19:42:49.436] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ja/strings.js
+[2018-02-18T19:42:49.437] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ko/strings.js
+[2018-02-18T19:42:49.437] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/lt/strings.js
+[2018-02-18T19:42:49.438] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/lv/strings.js
+[2018-02-18T19:42:49.438] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/nb/strings.js
+[2018-02-18T19:42:49.439] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/nl/strings.js
+[2018-02-18T19:42:49.439] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pl/strings.js
+[2018-02-18T19:42:49.439] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pt-br/strings.js
+[2018-02-18T19:42:49.440] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pt-pt/strings.js
+[2018-02-18T19:42:49.440] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ro/strings.js
+[2018-02-18T19:42:49.441] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ru/strings.js
+[2018-02-18T19:42:49.441] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sl/strings.js
+[2018-02-18T19:42:49.442] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sr/strings.js
+[2018-02-18T19:42:49.442] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sv/strings.js
+[2018-02-18T19:42:49.443] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/th/strings.js
+[2018-02-18T19:42:49.443] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/tr/strings.js
+[2018-02-18T19:42:49.444] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/vi/strings.js
+[2018-02-18T19:42:49.444] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-cn/strings.js
+[2018-02-18T19:42:49.445] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-hk/strings.js
+[2018-02-18T19:42:49.445] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-tw/strings.js
+[2018-02-18T19:42:51.731] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes
+[2018-02-18T19:42:52.165] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2018-02-18T19:42:52.863] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2018-02-18T19:46:01.060] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=4 to /webappbuilder/apps/4
+[2018-02-18T19:46:28.481] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/jimu.js
+[2018-02-18T19:46:29.215] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/images
+[2018-02-18T19:46:29.222] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/libs
+[2018-02-18T19:46:29.275] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/index.html
+[2018-02-18T19:46:29.276] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/env.js
+[2018-02-18T19:46:29.278] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/simpleLoader.js
+[2018-02-18T19:46:29.280] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/init.js
+[2018-02-18T19:46:29.281] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/web.config
+[2018-02-18T19:46:29.284] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/dynamic-modules
+[2018-02-18T19:46:29.287] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/readme.html
+[2018-02-18T19:46:29.288] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/config-readme.txt
+[2018-02-18T19:46:29.289] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/configs
+[2018-02-18T19:46:29.295] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/.jshintrc
+[2018-02-18T19:46:29.296] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/.jshintignore
+[2018-02-18T19:46:29.297] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/3rd-party-license.txt
+[2018-02-18T19:46:29.311] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/FoldableTheme
+[2018-02-18T19:46:29.467] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Scalebar
+[2018-02-18T19:46:29.550] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Search
+[2018-02-18T19:46:29.633] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Coordinate
+[2018-02-18T19:46:29.725] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/OverviewMap
+[2018-02-18T19:46:29.809] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/HomeButton
+[2018-02-18T19:46:29.844] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/MyLocation
+[2018-02-18T19:46:29.924] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/AttributeTable
+[2018-02-18T19:46:30.032] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Splash
+[2018-02-18T19:46:30.134] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ZoomSlider
+[2018-02-18T19:46:30.198] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ExtentNavigate
+[2018-02-18T19:46:30.240] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/FullScreen
+[2018-02-18T19:46:30.284] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Legend
+[2018-02-18T19:46:30.365] [DEBUG] utils - copy /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/LayerList
+[2018-02-18T20:10:37.569] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2018-02-18T20:10:37.813] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2018-02-18T20:10:56.703] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets
+[2018-02-18T20:10:57.471] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ar/strings.js
+[2018-02-18T20:10:57.472] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/bs/strings.js
+[2018-02-18T20:10:57.472] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/cs/strings.js
+[2018-02-18T20:10:57.473] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/da/strings.js
+[2018-02-18T20:10:57.473] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/de/strings.js
+[2018-02-18T20:10:57.474] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/el/strings.js
+[2018-02-18T20:10:57.474] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/es/strings.js
+[2018-02-18T20:10:57.475] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/et/strings.js
+[2018-02-18T20:10:57.475] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/fi/strings.js
+[2018-02-18T20:10:57.475] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/fr/strings.js
+[2018-02-18T20:10:57.476] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/he/strings.js
+[2018-02-18T20:10:57.476] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/hi/strings.js
+[2018-02-18T20:10:57.476] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/hr/strings.js
+[2018-02-18T20:10:57.477] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/it/strings.js
+[2018-02-18T20:10:57.477] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/id/strings.js
+[2018-02-18T20:10:57.478] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ja/strings.js
+[2018-02-18T20:10:57.478] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ko/strings.js
+[2018-02-18T20:10:57.478] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/lt/strings.js
+[2018-02-18T20:10:57.479] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/lv/strings.js
+[2018-02-18T20:10:57.479] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/nb/strings.js
+[2018-02-18T20:10:57.480] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/nl/strings.js
+[2018-02-18T20:10:57.480] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pl/strings.js
+[2018-02-18T20:10:57.480] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pt-br/strings.js
+[2018-02-18T20:10:57.481] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/pt-pt/strings.js
+[2018-02-18T20:10:57.481] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ro/strings.js
+[2018-02-18T20:10:57.482] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/ru/strings.js
+[2018-02-18T20:10:57.482] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sl/strings.js
+[2018-02-18T20:10:57.482] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sr/strings.js
+[2018-02-18T20:10:57.483] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/sv/strings.js
+[2018-02-18T20:10:57.483] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/th/strings.js
+[2018-02-18T20:10:57.484] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/tr/strings.js
+[2018-02-18T20:10:57.484] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/vi/strings.js
+[2018-02-18T20:10:57.485] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-cn/strings.js
+[2018-02-18T20:10:57.485] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-hk/strings.js
+[2018-02-18T20:10:57.485] [ERROR] repo - Read locale string error: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList/nls/zh-tw/strings.js
+[2018-02-18T20:10:59.759] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes
+[2018-02-18T20:11:00.268] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2018-02-18T20:11:01.172] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2018-02-18T20:11:01.523] [INFO] repo - Read repository items: /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2018-02-18T20:14:09.624] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2018-02-19T10:03:08.233] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2018-02-19T10:04:52.195] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/NearMe
+[2018-02-19T10:04:52.211] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Screening
+[2018-02-19T10:04:52.225] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Scalebar
+[2018-02-19T10:04:52.238] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Splash
+[2018-02-19T10:04:52.250] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Query
+[2018-02-19T10:04:52.261] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Daylight
+[2018-02-19T10:04:52.272] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Slides
+[2018-02-19T10:04:52.283] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GeoLookup
+[2018-02-19T10:04:52.294] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/BasemapGallery
+[2018-02-19T10:04:52.304] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/OverviewMap
+[2018-02-19T10:04:52.314] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/BasemapGallery
+[2018-02-19T10:04:52.324] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Edit
+[2018-02-19T10:04:52.334] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/TimeSlider
+[2018-02-19T10:04:52.344] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/BoxTheme
+[2018-02-19T10:04:52.354] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/DistrictLookup
+[2018-02-19T10:04:52.364] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ReportFeature
+[2018-02-19T10:04:52.374] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/FullScreen
+[2018-02-19T10:04:52.383] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Legend
+[2018-02-19T10:04:52.393] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/FullScreen
+[2018-02-19T10:04:52.402] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/TabTheme
+[2018-02-19T10:04:52.411] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Legend
+[2018-02-19T10:04:52.421] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/AddData
+[2018-02-19T10:04:52.431] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupableLayerList
+[2018-02-19T10:04:52.440] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ZoomSlider
+[2018-02-19T10:04:52.450] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/DartTheme
+[2018-02-19T10:04:52.458] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GridOverlay
+[2018-02-19T10:04:52.468] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Directions
+[2018-02-19T10:04:52.476] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Navigate
+[2018-02-19T10:04:52.484] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/JewelryBoxTheme
+[2018-02-19T10:04:52.492] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/LaunchpadTheme
+[2018-02-19T10:04:52.500] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/CostAnalysis
+[2018-02-19T10:04:52.509] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/About
+[2018-02-19T10:04:52.517] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/AttributeTable
+[2018-02-19T10:04:52.524] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Coordinate
+[2018-02-19T10:04:52.531] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Print
+[2018-02-19T10:04:52.538] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Compass
+[2018-02-19T10:04:52.545] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/FoldableTheme
+[2018-02-19T10:04:52.551] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Coordinate
+[2018-02-19T10:04:52.558] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/JewelryBoxTheme
+[2018-02-19T10:04:52.564] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/3DFx
+[2018-02-19T10:04:52.571] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/BillboardTheme
+[2018-02-19T10:04:52.577] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ExtentNavigate
+[2018-02-19T10:04:52.583] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Search
+[2018-02-19T10:04:52.589] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/BoxTheme
+[2018-02-19T10:04:52.595] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/LayerList
+[2018-02-19T10:04:52.601] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/HomeButton
+[2018-02-19T10:04:52.607] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Home
+[2018-02-19T10:04:52.613] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/SmartEditor
+[2018-02-19T10:04:52.620] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Filter
+[2018-02-19T10:04:52.626] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Summary
+[2018-02-19T10:04:52.632] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/FoldableTheme
+[2018-02-19T10:04:52.637] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Draw
+[2018-02-19T10:04:52.642] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/About
+[2018-02-19T10:04:52.647] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Bookmark
+[2018-02-19T10:04:52.652] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Select
+[2018-02-19T10:04:52.657] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Infographic
+[2018-02-19T10:04:52.662] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/BillboardTheme
+[2018-02-19T10:04:52.667] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Share
+[2018-02-19T10:04:52.671] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ImageMeasurement
+[2018-02-19T10:04:52.676] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/TabTheme
+[2018-02-19T10:04:52.680] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/MyLocation
+[2018-02-19T10:04:52.684] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/MyLocation
+[2018-02-19T10:04:52.687] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/BatchAttributeEditor
+[2018-02-19T10:04:52.691] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Measurement
+[2018-02-19T10:04:52.697] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/SituationAwareness
+[2018-02-19T10:04:52.703] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/LaunchpadTheme
+[2018-02-19T10:04:52.708] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/InfoSummary
+[2018-02-19T10:04:52.712] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/IncidentAnalysis
+[2018-02-19T10:04:52.719] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Swipe
+[2018-02-19T10:04:52.722] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Analysis
+[2018-02-19T10:04:52.725] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Stream
+[2018-02-19T10:04:52.728] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/Search
+[2018-02-19T10:04:52.731] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ReviewerDashboard
+[2018-02-19T10:04:52.734] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/SuitabilityModeler
+[2018-02-19T10:04:52.736] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/PlateauTheme
+[2018-02-19T10:04:52.738] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/themes/DashboardTheme
+[2018-02-19T10:04:52.741] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Chart
+[2018-02-19T10:04:52.742] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/RelatedTableCharts
+[2018-02-19T10:04:52.744] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ParcelDrafter
+[2018-02-19T10:04:52.747] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/LayerList
+[2018-02-19T10:04:52.749] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/themes/DartTheme
+[2018-02-19T10:04:52.751] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Splash
+[2018-02-19T10:04:52.752] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp3d/widgets/ZoomSlider
+[2018-02-19T10:04:52.754] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/Geoprocessing
+[2018-02-19T10:04:52.755] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/ObliqueViewer
+[2018-02-19T10:04:52.756] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/PublicNotification
+[2018-02-19T10:04:52.757] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/CoordinateConversion
+[2018-02-19T10:04:52.758] [INFO] repo - delete /Users/cnytync/Programming/arc-gis-dev/Tingo_WebAppBuilderForArcGIS/client/stemapp/widgets/GroupFilter
